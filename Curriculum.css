@@ -1,0 +1,151 @@
+:root {
+    --color-primario: #007BFF;
+    --color-secundario: #0056b3;
+    --color-fondo: #f9f9f9;
+    --color-texto: #333;
+    --color-borde: #ccc;
+    --color-hover: grey;
+    --color-tabla-fondo: #f4f4f4;
+    --color-tabla-hover: #f1f1f1;
+    --color-boton: #007BFF;
+    --color-boton-hover: #0056b3;
+    --color-enlace: #007BFF;
+    --color-enlace-hover: #0056b3;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Header */
+header {
+    background-color: var(--color-tabla-fondo);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-texto);
+    padding: 10px 20px;
+    background-color: var(--color-tabla-fondo);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    background-color: var(--color-hover);
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid var(--color-borde);
+}
+
+table th {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--color-tabla-fondo);
+}
+
+table tr:hover {
+    background-color: var(--color-tabla-hover);
+}
+
+/* Botones */
+button, .boton-descarga {
+    background-color: var(--color-boton);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .boton-descarga:hover {
+    background-color: var(--color-boton-hover);
+}
+
+/* Enlaces */
+a {
+    color: var(--color-enlace);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-enlace-hover);
+}
+
+/* Titulares */
+h2 {
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: var(--color-primario);
+}

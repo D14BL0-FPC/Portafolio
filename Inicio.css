@@ -1,0 +1,242 @@
+:root {
+    --main-color: #f4f4f4;
+    --secondary-color: #333;
+    --third-color: #5d5a59;
+    --fourth-color: #4267B2;
+    --fifth-color: #3b5998;
+    --line-header: #cccccc;
+    --six-color: grey;
+    --seven-color: white;
+    --eight-color: #00000080;
+    --ninen-color: #000000cc;
+
+}
+
+/*Aqui es para el menu*/
+header {
+    background-color: var(--main-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line-header);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para los enlaces */
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Animación al pasar el ratón */
+}
+
+/* Efecto hover en los enlaces */
+nav ul li a:hover {
+    transform: scale(1.1);
+    /* Aumenta el tamaño al pasar el ratón */
+    background-color: var(--six-color);
+    /* Cambia el color de fondo */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+    white-space: nowrap; /* Evita que los textos se partan en varias líneas */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.sobremi {
+    padding: 40px;
+    text-align: center;
+}
+
+.sobremi img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    object-fit: cover;
+    /*se asegurará de que la imagen llene el contenedor, aunque 
+                algunas partes de la imagen queden fuera de los bordes del contenedor. */
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.galeria div {
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.imagen {
+    width: 200px;
+    /* Tamaño inicial */
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen:hover {
+    transform: scale(1.2);
+    /* Aumenta el tamaño en un 20% */
+}
+
+/* Estilo para el icono */
+i {
+    font-size: 50px;
+    /* Tamaño de los iconos */
+    color: var(--fourth-color);
+    /* Color de los iconos */
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+/* Efecto hover cuando se pasa el ratón por encima */
+i:hover {
+    transform: scale(1.2);
+    /* Aumenta el tamaño del icono */
+    color: var(--fifth-color);
+    /* Cambia el color al pasar el ratón */
+}
+
+.Redes {
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.Redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--third-color);
+    color: var(--seven-color);
+}
+
+.carousel {
+    position: relative;
+    max-width: 50%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: var(--eight-color);
+    color: var(--seven-color);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 30%;
+}
+
+button:hover {
+    background-color: var(--ninen-color);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel {
+        max-width: 80%;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobremi img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .carousel {
+        max-width: 90%;
+    }
+
+    .Redes a {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}

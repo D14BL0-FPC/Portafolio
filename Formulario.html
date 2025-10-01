@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+
+<body>
+    <header>
+        <h1>Parra Caparrós Francisco</h1>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Sobre mí</a></li>
+                <li><a href="Formulario.html">Formulario</a></li>
+                <li><a href="Inicio.html">Hobbies</a></li>
+                <li><a href="Inicio.html">Redes Sociales</a></li>
+                <li><a href="Curriculum.html">Curriculum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre y apellidos: </label>
+            <input id="nombre" name="nombre" type="text" minlength="3" maxlength="15" required
+                placeholder="Introduzca su nombre"><br>
+
+            <label for="sexo">Sexo: </label>
+            <select id="sexo" name="sexo" required>
+                <!--Etiqueta option-->
+                <option value="" disabled selected hidden>Seleccione un sexo</option>
+                <option value="value1">Hombre</option>
+                <option value="value2">Mujer</option>
+                <option value="value3">Otro genero</option>
+
+            </select><br><br>
+
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com"
+                pattern=".+@g\.educaand\.es" title="Introduce tu correo de @g.educaand.es"><br><br>
+
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" pattern="" required placeholder="+xx xxxxxxxxx"
+                title="Introduzca su numero de telefono"> <br> <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label for="navegador">Elige el motivo del mensaje: </label>
+            <input id="motivo" list="browsers">
+            <datalist id="browsers">
+                <option value="Por su trabajo">
+                <option value="Planificacion de proyecto">
+                <option value="Por su manera de manegar el CSS">
+                <option value="Por otro motivo"></option>
+            </datalist><br><br>
+
+            <label for="mensaje">Escribe tu mensaje: </label>
+            <textarea rows="10" cols="50" placeholder="Mensaje que desee añadir" id="mensaje"></textarea>
+        </fieldset>
+        <input class="boton-enviar" type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

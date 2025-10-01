@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mi</title>
+    <link rel="stylesheet" href="Inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a Font Awesome para Facebook -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a Font Awesome para Twitter-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a Font Awesome para Instagram-->
+
+    <header>
+        <h1>Parra Caparrós Francisco</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="Formulario.html">Formulario</a></li>
+                <li><a href="#portafolio">Hobbies</a></li>
+                <li><a href="#Redes">Redes Sociales</a></li>
+                <li><a href="Curriculum.html">Curriculum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</head>
+
+<body>
+    <main>
+        <article id="about" class="sobremi">
+            <img src="Imagenes/IMG_0609.PNG" alt="Mi foto" class="imagen">
+            <h2>Sobre mí</h2>
+            <p>Buenas me llamo Francisco Parra Caparros, tengo 22 años y naci el 13/03/2002. Soy una persona con interes
+                por aprender
+                sobre mi sector. Mi objetivo es llegar a trabajar de esto ya que seria un sueño desde pequeño. Me gustan
+                mucho los
+                videojuegos asi que tengo mucha concentracion y trabajo en equipo, gracias a ello suelo tirar mucho por
+                logica.
+                Tambien soy muy fanatico sobre la cultura japonesa y un objetivo seria llegar a visitar el pais algun
+                dia. Ademas añadir que
+                soy curioso por todo lo nuevo que se haga en el puesto de trabajo que llegue a conseguir ademas de ser
+                muy ordenador con mi
+                zona de confort.
+            </p>
+        </article>
+
+        <section id="Hobbies" class="galeria">
+            <div>
+                <img src="Imagenes/Juegos.jpg" alt="Hobby o proyecto 1" class="imagen">
+                <p>Un hobbie como ya e dicho antes los Videojuegos me encantan, los llevo jugando desde pequeño y ha dia
+                    de
+                    hoy sirve para mucha cosas, tipo controlar mejor el estres, tener mayor concentracion, etc.
+                </p>
+            </div>
+            <div>
+                <img src="Imagenes/montaje.jpg" alt="Hobby o proyecto 2" class="imagen">
+                <p>Otro cosa que me gusta mucho es montar y desmontar equipos. Soy muy maniatico con tener el ordenador
+                    limpio
+                    a poder ser con su maximo rendimiento.
+                </p>
+            </div>
+            <div>
+                <img src="Imagenes/Dibujo.jpg" alt="Hobby o proyecto 3" class="imagen">
+                <p>Ultimo hobbie que a mi me gusta de vez en cuando hacer, seria hacer dibujo, me gusta estar de vez en
+                    cuando
+                    estar haciendo dibujos sobre anime que es algo que veo mucho.
+                </p>
+            </div>
+        </section>
+
+        <section id="carousel" class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="Imagenes/Juegos.jpg" alt="Hobby o proyecto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/montaje.jpg" alt="Hobby o proyecto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/Dibujo.jpg" alt="Hobby o proyecto 3">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+        <article id="Redes" class="Redes">
+            <h2>Redes Sociales</h2>
+            <a href="https://www.facebook.com/francisco.paarracaparros?locale=es_ES">
+                <i class="fab fa-facebook-square"></i> <!-- Icono de Facebook -->
+            </a>
+            <a href="https://x.com/D14BL0_FPC">
+                <i class="fab fa-twitter-square"></i> <!-- Icono de Twitter -->
+            </a>
+            <a href="https://www.instagram.com/franfpc_huo/">
+                <i class="fab fa-instagram-square"></i> <!-- Icono de Instagram -->
+            </a>
+        </article>
+    </main>
+
+    <footer>
+        <p>Esto ha sido empezado el 11/12/2024</p>
+    </footer>
+
+    <script src="Inicio.js"></script>
+</body>
+
+</html>

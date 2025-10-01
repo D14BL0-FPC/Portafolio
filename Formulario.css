@@ -1,0 +1,100 @@
+:root{
+    --main-color: #f4f4f4;
+    --secondary-color: #333;
+    --third-color: #5d5a59;
+    --fourth-color: #0056b3;
+    --line-header: #cccccc;
+    --five-color: grey;
+    --six-color: white;
+    --eight-color: #00000080;
+    --ninen-color: #000000cc;
+    --ten-color:black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--main-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line-header);
+}
+
+/* Estilos para los enlaces */
+nav ul li a {
+    text-decoration: none;
+    color: var(--ten-color);
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animación al pasar el ratón */
+}
+
+/* Efecto hover en los enlaces */
+nav ul li a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    background-color: var(--six-color); /* Cambia el color de fondo */
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Responsividad: cuando la pantalla es más pequeña */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Mantiene el diseño vertical en pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Muestra los enlaces en columna en pantallas pequeñas */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Espacio entre los enlaces */
+    }
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+    white-space: nowrap; /* Evita que los textos se partan en varias líneas */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.boton-enviar{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:var(--main-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .boton-enviar:hover {
+    background-color: var(--fourth-color);
+  }
